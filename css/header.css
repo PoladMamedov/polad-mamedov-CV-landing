@@ -1,0 +1,41 @@
+.main-header {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  color: #bcbcbc;
+  font-family: "Chakra Petch";
+}
+.main-header__title {
+  cursor: default;
+}
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header__right-side-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-header__button {
+  /* color: transparent; */
+  /* background-image: linear-gradient(90deg, rgba(234, 80, 34, 1) 48%, rgba(188, 188, 188, 1) 52%); */
+  /* background-clip: text; */
+  font-size: 20px;
+}
+/* .main-header__button:hover {
+  animation-name: btnHoverAnimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+}
+@keyframes btnHoverAnimation {
+  0% {
+    background-image: linear-gradient(90deg, rgba(234, 80, 34, 1) 0%, rgba(188, 188, 188, 1) 0%);
+  }
+  
+  100% {
+    background-image: linear-gradient(90deg, rgba(234, 80, 34, 1) 100%, rgba(188, 188, 188, 1) 100%);
+  }
+} */
