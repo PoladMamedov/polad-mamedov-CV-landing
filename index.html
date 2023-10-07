@@ -18,33 +18,61 @@
         <div class="cursor"></div>
     </div>
     <header class="main-header">
+        <!-- !СТИЛИ СКРЫТОГО МЕНЮ -->
+        <div class="hidden-nav-wrap">
+            <ul class="hidden-nav">
+                <li>
+                    <button class="hidden-nav__btn"><span class="hidden-nav__btn-num">01</span> Projects</button>
+                </li>
+                <li>
+                    <button class="hidden-nav__btn"><span class="hidden-nav__btn-num">02</span> Contact me</button>
+                </li>
+                <li>
+                    <button class="hidden-nav__btn"><span class="hidden-nav__btn-num">03</span> Skills</button>
+                </li>
+                <li>
+                    <button class="hidden-nav__btn"><span class="hidden-nav__btn-num">04</span> About</button>
+                </li>
+                <li>
+                    <button class="hidden-nav__btn"><span class="hidden-nav__btn-num">05</span> Education</button>
+                </li>
+            </ul>
+            <button class="hidden-nav__close-btn">
+                <img src="./img/mnu-close-circle.svg" alt="">
+                <img width="25" height="25" src="./img/mnu-close-icon.svg" alt="">
+            </button>
+        </div>
         <div class="container main-header__container">
-            <h1 class="main-header__title">Polad Mamedov</h1>
-            <nav class="main-header__right-side">
-                <ul class="main-header__right-side-list">
+            <h1 data-value="Polad Mamedov" class="main-header__title">Polad Mamedov</h1>
+            <nav class="main-header__navigation">
+                <ul class="main-header__navigation-list">
                     <li>
-                        <button class="main-header__button">About</button>
+                        <button class="main-header__navigation-list-btn">About</button>
                     </li>
                     <li>
-                        <button class="main-header__button">Projects</button>
+                        <button class="main-header__navigation-list-btn">Projects</button>
                     </li>
                     <li>
-                        <button class="main-header__button">Skills</button>
+                        <button class="main-header__navigation-list-btn">Skills</button>
                     </li>
                     <li>
-                        <button class="main-header__button">Education</button>
+                        <button class="main-header__navigation-list-btn">Education</button>
                     </li>
                     <li>
-                        <button class="main-header__button">Languages</button>
-                    </li>
-                    <li>
-                        <button class="main-header__button">Contact me</button>
+                        <button class="main-header__navigation-list-btn">Contact me</button>
                     </li>
                 </ul>
             </nav>
+            <button class="main-header__mobile-menu-open-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
         </div>
     </header>
+    <section class="about-section">
 
+    </section>
 </body>
 
 </html>

@@ -1,22 +1,29 @@
 body {
-  background: rgb(11, 11, 11);
-  background: linear-gradient(180deg, rgba(11, 11, 11, 1) 60%, rgba(234, 80, 34, 1) 100%);
+  --main-dark-color: #0b0b0b;
+  --main-text-color: #bcbcbc;
+  --main-text-light-color: #fff;
+  --secondary-color: #ea5022;
+  --accent-color: #eabb22;
+
+  background: linear-gradient(180deg, rgba(11, 11, 11, 1) 60%, var(--secondary-color) 100%);
+
   position: relative;
   overflow: hidden;
   margin: 0;
   height: 100%;
-  font-family: "Rajdhani", "Chakra Petch";
+  font-family: "Rajdhani", "Chakra Petch", monospace;
 }
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 @media screen and (max-width: 1200px) {
   .container {
     width: 100%;
+    min-width: 300px;
   }
 }
 .cursor-chaser {
@@ -28,7 +35,6 @@ body {
   z-index: 1000;
   pointer-events: none;
   will-change: transform;
-  transition: 0.1s transform ease;
 }
 .cursor {
   width: 14px;
@@ -36,7 +42,7 @@ body {
   margin-top: -7px;
   margin-left: -7px;
   transition: 0.5s all ease;
-  border: 1px solid #ea5022;
+  border: 1px solid var(--secondary-color);
   border-radius: 50%;
 }
 .cursor--active {
@@ -45,4 +51,8 @@ body {
   margin-top: -40px;
   margin-left: -40px;
 }
-
+@media screen and (max-width: 880px) {
+  .cursor-chaser {
+    display: none;
+  }
+}
