@@ -5,9 +5,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  /* ! */
   width: 0%;
-  /* width: 100%; */
   overflow: hidden;
   background-color: var(--main-dark-color);
   color: var(--main-text-color);
@@ -79,7 +77,6 @@
   margin-right: 10px;
   margin-left: 20px;
 }
-
 .hidden-nav__close-btn {
   position: relative;
   min-width: 80px;
@@ -110,7 +107,6 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-
 @media screen and (max-width: 620px) {
   .hidden-nav-wrap {
     flex-direction: column-reverse;
@@ -122,8 +118,7 @@
     margin-top: 80px;
   }
 }
-
-/* ! phone breakpoint */
+/* ! phone breakpoints */
 @media screen and (max-width: 520px) {
   .hidden-nav > li {
     font-size: 16px;
@@ -142,7 +137,6 @@
     margin-left: 10px;
   }
 }
-/* ! ЭКРАН ДО ФОЛДА */
 @media screen and (max-width: 400px) {
   .hidden-nav {
     row-gap: 10px;
